@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- CSS Principale-->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- CSS Responsive-->
     <link rel="stylesheet" href="styles/responsive.css">
     <title>Spotify</title>
 </head>
@@ -13,9 +21,35 @@
     <main>
         <div class="container flex">
             <section class="sidebar">
-                <div class="logo"></div>
-                <div class="menu"></div>
-                <div class="playlist"></div>
+                <div class="logo">
+                    <img src="img/logo.svg" class="logo-spotify">
+                </div>
+                <div class="menu">
+                    <div class="home color-white"><img src="img/home.svg"> Home</div>
+                    <div class="cerca color-white"><img src="img/search.svg"> Cerca</div>
+                    <div class="libreria color-white"><img src="img/libreria.svg"> La tua libreria</div>
+                </div>
+                <div class="playlist">
+                    <h3 class="color-white">PLAYLIST</h3>
+                    <button class="btn-piu">+</button>
+                    <span class="color-white crea-playlist">Crea Playlist</span>
+                    <ul class="color-white">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                    <div class="footer-sidebar">
+                        <img src="img/download.svg">
+                        <div class="installa-app">Installa app</div>
+                        <div class="divisore"></div>
+                        <img src="img/profile.svg">
+                        <div class="utente">John Doe</div>
+                    </div>
+                </div>
             </section>
             <section class="musica">
                 <div class="upgrade-bar"></div>

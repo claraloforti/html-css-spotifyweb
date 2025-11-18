@@ -8,6 +8,10 @@
 
 /* Generali */
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -25,9 +29,80 @@
 /* Sezione Sidebar */
 
 .sidebar {
-    width: 300px;
+    width: 350px;
     background-color: black;
+    padding-left: 30px;
 }
+
+.logo-spotify {
+    width: 200px;
+    margin: 40px 0;
+}
+
+.menu>* {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.menu img {
+    width: 40px;
+    vertical-align: bottom;
+}
+
+.playlist {
+    margin-top: 40px;
+}
+
+.btn-piu {
+    font-size: 50px;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+
+.crea-playlist {
+    vertical-align: 50%;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.playlist ul {
+    list-style: none;
+}
+
+.playlist li {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.footer-sidebar {
+    vertical-align: bottom;
+}
+
+.footer-sidebar img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.installa-app {
+    font-size: 20px;
+    display: inline;
+    vertical-align: top;
+    color: grey;
+}
+
+.divisore {
+    width: calc(100 % - 30px);
+    margin: 20px 30px 20px 0;
+    border: 1px solid grey;
+}
+
+.utente {
+    font-size: 22px;
+    display: inline;
+    vertical-align: top;
+    color: white;
+}
+
 
 /* Sezione Musica */
 
@@ -35,6 +110,11 @@
     flex-grow: 1;
     background-color: rgb(20, 24, 33);
 }
+
+.upgrade-bar {
+    
+}
+
 
 /* Sezione Player */
 
