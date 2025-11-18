@@ -193,12 +193,41 @@ figure p {
     bottom: 0;
     width: 1400px; Capire perchè non funziona 100%*/
     width: 1400px;
+    margin: 0 auto;
     height: 100px;
     background-color: rgb(41, 41, 41);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.current-song {}
+.current-song {
+    align-items: center;
+}
 
 .current-song img {
-    width: 100px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.song {
+    margin-right: 30px;
+}
+
+.timeline {
+    flex-direction: column;
+}
+
+.icone-timeline {
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tempo {
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
 }
