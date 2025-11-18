@@ -78,7 +78,6 @@ body {
 .playlist {
     overflow: auto;
 }
-
 .playlist ul {
     list-style: none;
 }
