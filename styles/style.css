@@ -38,9 +38,11 @@ body {
 
 .sidebar {
     width: 250px;
+    height: 100vh;
     background-color: black;
     padding-left: 30px;
     flex-shrink: 0;
+    flex-direction: column;
 }
 
 .logo-spotify {
@@ -73,6 +75,10 @@ body {
     font-size: 14px;
 }
 
+.playlist {
+    overflow: auto;
+}
+
 .playlist ul {
     list-style: none;
 }
@@ -83,7 +89,8 @@ body {
 }
 
 .footer-sidebar {
-    margin-top: 100%; /* CAPIRE COME FARE A FARLO STARE IN BASSO*/
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .footer-sidebar img {
@@ -153,9 +160,10 @@ body {
     margin: 40px 20px;
 }
 
-.create-for-you,.popolari {
-   margin-top: 40px;
-   margin-bottom: 10px;
+.create-for-you,
+.popolari {
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .cards {
@@ -164,7 +172,8 @@ body {
 }
 
 .cards img {
-    max-width: 100%;
+    max-width: 168.34px;
+    /* Da sistemare */
 }
 
 figure {
@@ -186,11 +195,8 @@ figure p {
     background-color: rgb(41, 41, 41);
 }
 
-.current-song {
-
-}
+.current-song {}
 
 .current-song img {
     width: 100px;
 }
-
