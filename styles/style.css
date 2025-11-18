@@ -6,4 +6,39 @@
     box-sizing: border-box;
 }
 
-/**/
+/* Generali */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.color-white {
+    color: white;
+}
+
+
+/* Sezione Sidebar */
+
+.sidebar {
+    width: 300px;
+    background-color: black;
+}
+
+/* Sezione Musica */
+
+.musica {
+    flex-grow: 1;
+    background-color: rgb(20, 24, 33);
+}
+
+/* Sezione Player */
+
+.player {
+    height: 80px;
+    background-color: rgb(41, 41, 41);
+}
