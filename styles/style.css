@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -25,27 +25,36 @@ body {
     color: white;
 }
 
+.color-grey {
+    color: grey;
+}
+
+.round-border {
+    border-radius: 50%;
+}
+
 
 /* Sezione Sidebar */
 
 .sidebar {
-    width: 350px;
+    width: 250px;
     background-color: black;
     padding-left: 30px;
+    flex-shrink: 0;
 }
 
 .logo-spotify {
-    width: 200px;
+    width: 150px;
     margin: 40px 0;
 }
 
 .menu>* {
-    font-size: 20px;
+    font-size: 10px;
     margin-bottom: 15px;
 }
 
 .menu img {
-    width: 40px;
+    width: 20px;
     vertical-align: bottom;
 }
 
@@ -54,15 +63,14 @@ body {
 }
 
 .btn-piu {
-    font-size: 50px;
-    padding: 0px 10px;
+    font-size: 20px;
+    padding: 0px 5px;
     margin-top: 20px;
 }
 
 .crea-playlist {
-    vertical-align: 50%;
     margin-left: 10px;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .playlist ul {
@@ -71,33 +79,37 @@ body {
 
 .playlist li {
     margin: 30px 0;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .footer-sidebar {
-    vertical-align: bottom;
+    margin-top: 100%; /* CAPIRE COME FARE A FARLO STARE IN BASSO*/
 }
 
 .footer-sidebar img {
-    width: 25px;
+    width: 18px;
     margin-right: 10px;
 }
 
+.img-profile {
+    background-color: grey;
+    border-radius: 50%;
+}
+
 .installa-app {
-    font-size: 20px;
+    font-size: 10px;
     display: inline;
-    vertical-align: top;
-    color: grey;
+    vertical-align: 50%;
 }
 
 .divisore {
-    width: calc(100 % - 30px);
-    margin: 20px 30px 20px 0;
+    width: calc(100% - 30px);
+    margin: 10px 30px 10px 0;
     border: 1px solid grey;
 }
 
 .utente {
-    font-size: 22px;
+    font-size: 14px;
     display: inline;
     vertical-align: top;
     color: white;
@@ -107,18 +119,78 @@ body {
 /* Sezione Musica */
 
 .musica {
-    flex-grow: 1;
+    width: calc(100% - 250px);
     background-color: rgb(20, 24, 33);
+    height: 100vh;
+    overflow: auto;
 }
 
 .upgrade-bar {
-    
+    position: sticky;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+
+.btn-upgrade {
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 14px 45px;
+}
+
+.categories-bar {
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.container-musica {
+    margin: 40px 20px;
+}
+
+.create-for-you,.popolari {
+   margin-top: 40px;
+   margin-bottom: 10px;
+}
+
+.cards {
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cards img {
+    max-width: 100%;
+}
+
+figure {
+    line-height: 25px;
+    text-align: center;
+}
+
+figure p {
+    color: grey;
 }
 
 
 /* Sezione Player */
 
 .player {
+    width: 1400px;
+    margin: 0 auto;
     height: 80px;
     background-color: rgb(41, 41, 41);
 }
+
+.current-song {
+
+}
+
+.current-song img {
+    width: 100px;
+}
+
