@@ -1,1 +1,18 @@
 /* RESPONSIVE */
+
+/* RESPONSIVE TABLET */
+
+@media screen and (max-width:768px) {
+    .categories-bar, .cards {
+        flex-wrap: wrap;
+    }
+
+    figure {
+        width: calc((100% - 3 * 2%) / 4);
+    }
+}
+
+
+/* RESPONSIVE MOBILE */
+
+@media screen and (max-width:480px) {}
