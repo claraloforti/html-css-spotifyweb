@@ -162,7 +162,7 @@ body {
 
 .btn-upgrade {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 8px;
     border: 1px solid white;
     border-radius: 35px;
     padding: 14px 45px;
@@ -368,7 +368,7 @@ figure {
 }
 
 .btn-upgrade:hover {
-    font-size: 14px;
+    font-size: 9px;
 }
 
 .cards-imgs:hover .sfondo-trasparente,

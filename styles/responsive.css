@@ -1,8 +1,9 @@
 /* RESPONSIVE */
 
-/* RESPONSIVE TABLET */
+/* RESPONSIVE MD */
 
 @media screen and (max-width:768px) {
+
     .categories-bar, .cards {
         flex-wrap: wrap;
     }
@@ -10,9 +11,23 @@
     figure {
         width: calc((100% - 3 * 2%) / 4);
     }
+
 }
 
 
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE S */
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:600px) {
+
+    figure {
+        width: calc((100% - 1 * 2%) / 2);
+    }
+
+}
+
+/* RESPONSIVE XS */
+
+@media screen and (max-width:480px) {
+
+
+}
