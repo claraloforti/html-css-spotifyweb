@@ -283,9 +283,14 @@ figure {
 
 .icone-timeline {
     justify-content: center;
-    gap: 20px;
-    font-size: 20px;
+    align-items: center;
+    font-size: 14px;
     margin-bottom: 10px;
+    gap: 10px;
+}
+
+.icone-timeline .fa-circle-play {
+    font-size: 24px;
 }
 
 .tempo-totale {
@@ -301,11 +306,13 @@ figure {
 .timeline-bar .tempo-attuale {
     width: 100px;
     border: 3px solid white;
+    position: relative;
 }
 
 .volume .tempo-attuale {
     width: 50px;
     border: 3px solid white;
+    position: relative;
 }
 
 .volume .tempo-totale {
@@ -314,6 +321,17 @@ figure {
 
 .volume {
     gap: 10px;
+}
+
+.cursore-musica {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    right: -1em;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 
@@ -352,5 +370,17 @@ figure {
 
 .cards-imgs:hover .sfondo-trasparente,
 .cards-imgs:hover .play-hover {
+    display: inline-block;
+}
+
+.icone-timeline .fa-circle-play:hover {
+    font-size: 28px;
+}
+
+.tempo-attuale:hover {
+    border: 3px solid greenyellow;
+}
+
+.tempo-attuale:hover .cursore-musica {
     display: inline-block;
 }
