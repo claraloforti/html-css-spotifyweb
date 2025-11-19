@@ -210,17 +210,18 @@ body {
 
 .cards p {
     color: grey;
+    margin-top: 10px;
 }
 
 figure {
     width: calc((100% - 100px) / 6);
-    line-height: 25px;
     text-align: center;
 }
 
 .cards-imgs {
     position: relative;
     line-height: 0;
+    margin-bottom: 20px;
 }
 
 .sfondo-trasparente {
