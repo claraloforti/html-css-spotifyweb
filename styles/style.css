@@ -211,7 +211,7 @@ body {
 figure {
     line-height: 25px;
     text-align: center;
-    width: calc((100% / 6) - 20px);
+    width: calc((100% - 100px) / 6);
 }
 
 figure p {
