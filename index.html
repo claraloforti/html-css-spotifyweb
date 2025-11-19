@@ -31,15 +31,23 @@
                 </div>
                 <!-- Menu Sidebar -->
                 <div class="menu">
-                    <div class="home"><img src="img/home.svg"> Home</div>
-                    <div class="cerca"><img src="img/search.svg"> Cerca</div>
-                    <div class="libreria"><img src="img/libreria.svg"> La tua libreria</div>
+                    <div class="home flex">
+                        <div class="barra-menu"></div><img src="img/home.svg"> Home
+                    </div>
+                    <div class="cerca flex">
+                        <div class="barra-menu"></div><img src="img/search.svg"> Cerca
+                    </div>
+                    <div class="libreria flex">
+                        <div class="barra-menu"></div><img src="img/libreria.svg"> La tua libreria
+                    </div>
                 </div>
                 <!-- Playlist Sidebar -->
                 <div class="playlist">
                     <h4>PLAYLIST</h4>
-                    <button class="btn-piu">+</button>
-                    <span class="crea-playlist">Crea Playlist</span>
+                    <div class="crea">
+                        <button class="btn-piu">+</button>
+                        <span class="crea-playlist">Crea Playlist</span>
+                    </div>
                     <ul>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -66,12 +74,18 @@
                     <a href="#" class="btn-upgrade color-white"><b>EFFETTUA L'UPGRADE</b></a>
                 </div>
                 <ul class="categories-bar flex color-grey">
-                    <li>IN EVIDENZA</li>
-                    <li>PODCAST</li>
-                    <li>CLASSIFICHE</li>
-                    <li>GENERI E MOOD</li>
-                    <li>NUOVE USCITE</li>
-                    <li>SCOPRI</li>
+                    <li>IN EVIDENZA<div class="barra-categorie"></div>
+                    </li>
+                    <li>PODCAST<div class="barra-categorie"></div>
+                    </li>
+                    <li>CLASSIFICHE<div class="barra-categorie"></div>
+                    </li>
+                    <li>GENERI E MOOD<div class="barra-categorie"></div>
+                    </li>
+                    <li>NUOVE USCITE<div class="barra-categorie"></div>
+                    </li>
+                    <li>SCOPRI<div class="barra-categorie"></div>
+                    </li>
                 </ul>
                 <!-- Cointainer card e relativi titoli -->
                 <div class="container-musica color-white">

@@ -39,7 +39,7 @@ body {
 .sidebar {
     width: 250px;
     background-color: black;
-    padding-left: 30px;
+    padding-left: 20px;
     flex-shrink: 0;
     flex-direction: column;
 }
@@ -47,6 +47,23 @@ body {
 .logo-spotify {
     width: 150px;
     margin: 40px 0;
+}
+
+.home,
+.cerca,
+.libreria {
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.barra-menu {
+    display: none;
+    position: absolute;
+    background-color: greenyellow;
+    width: 2px;
+    height: 100%;
+    left: -20px;
 }
 
 .menu>* {
@@ -61,21 +78,24 @@ body {
 
 .playlist {
     margin-top: 40px;
+    overflow: auto;
+}
+
+.playlist h4 {
+    color: white;
 }
 
 .btn-piu {
+    background-color: grey;
     font-size: 20px;
     padding: 0px 5px;
     margin-top: 20px;
+    border: grey;
 }
 
 .crea-playlist {
     margin-left: 10px;
     font-size: 14px;
-}
-
-.playlist {
-    overflow: auto;
 }
 
 .playlist ul {
@@ -153,6 +173,20 @@ body {
     list-style: none;
     gap: 25px;
     margin-top: 20px;
+}
+
+.categories-bar li {
+    position: relative;
+}
+
+.barra-categorie {
+    position: absolute;
+    background-color: greenyellow;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    margin-top: 5px;
+    display: none;
 }
 
 .container-musica {
@@ -255,4 +289,38 @@ figure p {
 
 .volume {
     gap: 10px;
+}
+
+
+/* Hover */
+
+.menu *:hover,
+.crea:hover,
+.playlist li:hover,
+.installa-app:hover,
+.categories-bar li:hover,
+.song p:hover,
+.icone-song i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.crea:hover .btn-piu {
+    background-color: white;
+}
+
+.song p:hover {
+    text-decoration: underline;
+}
+
+.menu *:hover .barra-menu {
+    display: block;
+}
+
+.categories-bar li:hover .barra-categorie {
+    display: block;
+}
+
+.btn-upgrade:hover {
+    font-size: 14px;
 }
