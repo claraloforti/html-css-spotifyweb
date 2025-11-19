@@ -177,7 +177,7 @@ body {
 figure {
     line-height: 25px;
     text-align: center;
-    width: calc(100% / 6);
+    width: calc((100% / 6) - 20px);
 }
 
 figure p {
@@ -244,13 +244,13 @@ figure p {
     border: 3px solid white;
 }
 
-.volume .tempo-totale {
-    width: 150px;
-}
-
 .volume .tempo-attuale {
     width: 50px;
     border: 3px solid white;
+}
+
+.volume .tempo-totale {
+    width: 150px;
 }
 
 .volume {
