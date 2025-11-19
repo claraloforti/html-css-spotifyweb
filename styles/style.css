@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 1400px;
+    height: calc(100vh - 100px);
     margin: 0 auto;
 }
 
@@ -38,7 +38,6 @@ body {
 
 .sidebar {
     width: 250px;
-    height: 100vh;
     background-color: black;
     padding-left: 30px;
     flex-shrink: 0;
@@ -126,14 +125,14 @@ body {
 /* Sezione Musica */
 
 .musica {
-    width: calc(100% - 250px);
+    flex-grow: 1;
     background-color: rgb(20, 24, 33);
-    height: 100vh;
     overflow: auto;
 }
 
 .upgrade-bar {
     position: sticky;
+    top: 0;
     justify-content: flex-end;
     align-items: center;
     height: 100px;
@@ -172,13 +171,13 @@ body {
 }
 
 .cards img {
-    max-width: 168.34px;
-    /* Da sistemare */
+    max-width: 100%;
 }
 
 figure {
     line-height: 25px;
     text-align: center;
+    width: calc(100% / 6);
 }
 
 figure p {
@@ -189,10 +188,6 @@ figure p {
 /* Sezione Player */
 
 .player {
-    /*position: fixed;
-    bottom: 0;
-    width: 1400px; Capire perchè non funziona 100%*/
-    width: 1400px;
     margin: 0 auto;
     height: 100px;
     background-color: rgb(41, 41, 41);
