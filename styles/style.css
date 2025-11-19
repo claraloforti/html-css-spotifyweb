@@ -114,7 +114,7 @@ body {
 
 .footer-sidebar img {
     width: 18px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .img-profile {
@@ -208,14 +208,39 @@ body {
     max-width: 100%;
 }
 
-figure {
-    line-height: 25px;
-    text-align: center;
-    width: calc((100% - 100px) / 6);
+.cards p {
+    color: grey;
 }
 
-figure p {
-    color: grey;
+figure {
+    width: calc((100% - 100px) / 6);
+    line-height: 25px;
+    text-align: center;
+}
+
+.cards-imgs {
+    position: relative;
+    line-height: 0;
+}
+
+.sfondo-trasparente {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.375);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.play-hover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
 }
 
 
@@ -323,4 +348,9 @@ figure p {
 
 .btn-upgrade:hover {
     font-size: 14px;
+}
+
+.cards-imgs:hover .sfondo-trasparente,
+.cards-imgs:hover .play-hover {
+    display: inline-block;
 }
