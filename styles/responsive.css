@@ -32,6 +32,7 @@
 
     .sidebar {
         width: 60px;
+        padding-left: 15px;
     }
 
     .logo,
