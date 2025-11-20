@@ -18,7 +18,7 @@
 
 /* RESPONSIVE S */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
 
     figure {
         width: calc((100% - 1 * 2%) / 2);

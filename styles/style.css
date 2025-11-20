@@ -258,7 +258,7 @@ figure {
     background-color: rgb(41, 41, 41);
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .player * {
@@ -286,6 +286,7 @@ figure {
 .icone-song {
     gap: 10px;
     color: rgba(255, 255, 255, 0.599);
+    flex-wrap: wrap;
 }
 
 .timeline {
@@ -315,13 +316,13 @@ figure {
 }
 
 .timeline-bar .tempo-attuale {
-    width: 100px;
+    width: 20%;
     border: 3px solid white;
     position: relative;
 }
 
 .volume .tempo-attuale {
-    width: 50px;
+    width: 40%;
     border: 3px solid white;
     position: relative;
 }
@@ -385,7 +386,7 @@ figure {
 }
 
 .icone-timeline .fa-circle-play:hover {
-    font-size: 28px;
+    transform: scale(1.2);
 }
 
 .tempo-attuale:hover {
