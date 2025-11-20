@@ -4,7 +4,8 @@
 
 @media screen and (max-width:768px) {
 
-    .categories-bar, .cards {
+    .categories-bar,
+    .cards {
         flex-wrap: wrap;
     }
 
@@ -29,5 +30,29 @@
 
 @media screen and (max-width:480px) {
 
+    .sidebar {
+        width: 60px;
+    }
+
+    .logo,
+    .menu span,
+    .playlist,
+    .installa-app,
+    .divisore,
+    .utente,
+    .current-song img {
+        display: none;
+    }
+
+    .menu img,
+    .footer-sidebar img {
+        width: 30px;
+    }
+
+    .logo-small {
+        display: inline-block;
+        width: 30px;
+        margin: 40px 0;
+    }
 
 }

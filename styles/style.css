@@ -49,6 +49,10 @@ body {
     margin: 40px 0;
 }
 
+.logo-small {
+    display: none;
+}
+
 .home,
 .cerca,
 .libreria {
@@ -114,7 +118,7 @@ body {
 }
 
 .footer-sidebar img {
-    width: 18px;
+    width: 20px;
     margin-right: 5px;
 }
 
@@ -255,6 +259,10 @@ figure {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.player * {
+    min-width: 0;
 }
 
 .current-song {
