@@ -80,6 +80,10 @@ body {
     vertical-align: bottom;
 }
 
+.cerca img, .libreria img, .installa img {
+    filter: invert(50%);
+}
+
 .playlist {
     margin-top: 40px;
     overflow: auto;
@@ -352,12 +356,16 @@ figure {
 .menu *:hover,
 .crea:hover,
 .playlist li:hover,
-.installa-app:hover,
+.installa:hover,
 .categories-bar li:hover,
 .song p:hover,
 .icone-song i:hover {
     color: white;
     cursor: pointer;
+}
+
+.cerca:hover img, .libreria:hover img, .installa:hover img {
+    filter: invert(0%);
 }
 
 .crea:hover .btn-piu {
